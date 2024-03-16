@@ -4,7 +4,9 @@
 }
 :root{
   --primary-color: rgb(211, 233, 122);
+    --box-shadow: 0 5px 10px rgba(247, 230, 216, 0.3);
 }
+
 .hero {
 	height: 100vh;
 	width: 100%;
@@ -22,17 +24,18 @@
 }
 
 .content h1{
-  font-size: 56px;
+  font-size: 65px;
   font-family: "Playfair Display", serif;
   color: var(--primary-color);
 }
-h2{
+.content h2{
   color: #fff;
 }
 .content p{
   font-size: 19px;
   padding-bottom: 30px;
   color: #fff;
+  
 
 }
 .content img{
@@ -48,6 +51,27 @@ a input{
       transition: transform 0.4s;
       margin-right: 10px;
     }
-.projects h1{
-  color: rgb(151, 175, 53);
+  .projects{
+    background-color: #101010;
+  }
+.projects h1,h2{
+  color:rgb(154, 170, 71);
+  
+}
+.container{
+  margin: 0;
+}
+.projects {
+  background-color: #4e3d3d;
+  
+}
+@media(max-width:600px) {
+  
+ .content h1 {
+    font-size: 40px;
+    padding-top: 20px;
+  }
+  .content p{
+    margin-top: 100px;
+  }
 }
